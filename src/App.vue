@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
-    <router-link to="friends">Friends</router-link>
-    <router-link to="account">Account</router-link>
-    <router-link to="contact">Contact</router-link>
-    <router-view/>
+    <Navigation />
+    <Friends />
+    <FooterComponent />
+    <!--<img src="./assets/logo.png">-->
+    <!--<router-link to="friends">Friends</router-link>-->
+    <!--<router-link to="account">Account</router-link>-->
+    <!--<router-link to="contact">Contact</router-link>-->
+    <!--<router-view/>-->
   </div>
 </template>
 
 <script>
+import Navigation from './components/Navigation'
+import Friends from './components/Friends'
+import FooterComponent from './components/Footer'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Navigation,
+    Friends,
+    FooterComponent
+  }
 }
 </script>
 
