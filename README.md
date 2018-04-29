@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+[Vue.js Tutorials](https://www.youtube.com/watch?v=mZY1yyrlJWU&list=PLoYCgNOIyGADZuvKJweutZDOO9VI9YiJ9)  
+[Github](https://github.com/learncodeacademy/vue-tutorials/tree/master/vue-8-store-pattern)
+
+
 ## Build Setup
 
 ``` bash
