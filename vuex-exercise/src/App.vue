@@ -10,18 +10,15 @@
   </div>
 </template>
 <script>
-  import Item from './Item.vue';
+  import { mapState } from 'vuex'
+  import Item from './Item.vue'
+
   export default {
     name: 'app',
     components: { Item },
     data () {
       return {
-        inputTitle: "",
-        items: [
-          {is_do: false, title: 'タスク1'},
-          {is_do: true, title: 'タスク2'},
-          {is_do: false, title: 'タスク3'}
-        ]
+        inputTitle: ""
       }
     },
     methods: {
@@ -31,6 +28,12 @@
           is_do: false
         });
       }
+    },
+    // これでdataにitemsを書く必要がなくなる
+    computed: {
+      // スプレッド演算子
+      // https://qiita.com/akisx/items/682a4283c13fe336c547
+      ...mapState(['items'])
     }
   }
 </script>
