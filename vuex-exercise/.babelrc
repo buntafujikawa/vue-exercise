@@ -1,6 +1,8 @@
 {
   "presets": [
     ["env", { "modules": false }],
+//    ["latest", { "es2015": { "modules": false }}],
     "stage-3"
-  ]
+  ],
+  "plugins": ["transform-object-rest-spread"]
 }
