@@ -5,12 +5,13 @@
     </ul>
     <div>
       <input type="text" v-model="inputTitle">
-      <button @click="addItem">追加</button>
+      <button @click="ADD_TASK(inputTitle)">追加</button>
     </div>
   </div>
 </template>
 <script>
-  import { mapState } from 'vuex'
+  import { mapState, mapActions } from 'vuex'
+  import * as types from './store/mutation-types';
   import Item from './Item.vue'
 
   export default {
@@ -22,12 +23,9 @@
       }
     },
     methods: {
-      addItem() {
-        this.items.push({
-          title: this.inputTitle,
-          is_do: false
-        });
-      }
+      ...mapActions([
+        types.ADD_TASK
+      ])
     },
     // これでdataにitemsを書く必要がなくなる
     computed: {
