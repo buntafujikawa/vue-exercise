@@ -28,3 +28,11 @@ npm test
 ```
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## lint
+
+```bash
+$ npm install --save-dev eslint
+$ npm i eslint-plugin-standard@latest --save-dev
+$ npm run lint
+```
