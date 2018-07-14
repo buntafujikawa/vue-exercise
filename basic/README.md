@@ -8,7 +8,7 @@
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# serve with hot reload at localhost:8000
 npm run dev
 
 # build for production with minification
@@ -36,3 +36,6 @@ $ npm install --save-dev eslint
 $ npm i eslint-plugin-standard@latest --save-dev
 $ npm run lint
 ```
+
+## reference
+[基礎から学ぶ Vue.js](https://www.amazon.co.jp/dp/B07D9BYHMZ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
