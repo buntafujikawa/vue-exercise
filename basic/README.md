@@ -39,3 +39,4 @@ $ npm run lint
 
 ## reference
 [基礎から学ぶ Vue.js](https://www.amazon.co.jp/dp/B07D9BYHMZ/ref=dp-kindle-redirect?_encoding=UTF8&btkr=1)
+[体で覚えるVue.js - ディレクティブ編 〜 JSおくのほそ道 #023](https://qiita.com/hosomichi/items/25041c1d46452de84aa6)
