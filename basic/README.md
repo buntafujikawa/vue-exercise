@@ -34,6 +34,7 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 ```bash
 $ npm install --save-dev eslint
 $ npm i eslint-plugin-standard@latest --save-dev
+$ npm install eslint-plugin-lodash --save-dev
 $ npm run lint
 ```
 
