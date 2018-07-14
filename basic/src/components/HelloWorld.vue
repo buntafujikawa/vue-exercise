@@ -18,6 +18,11 @@
           Chapter3
         </a>
       </li>
+      <li>
+        <a href="/#/chapter4" target="_blank">
+          Chapter4
+        </a>
+      </li>
     </ul>
     <h2>Essential Links</h2>
     <ul>
