@@ -1,3 +1,4 @@
+import 'babel-polyfill'
 import Vue from 'vue'
 import Vuex from 'vuex'
 import * as types from './mutation-types'
@@ -5,6 +6,8 @@ import * as types from './mutation-types'
 Vue.use(Vuex)
 
 export default new Vuex.Store({
+  // タイプミスなどで不用意にステートを変更しても警告がでないので、開発中はstrictモードを利用する
+  strict: process.env.NODE_ENV !== 'production',
   state: {
     items: [
       {is_do: false, title: 'タスク1'},
@@ -12,6 +15,7 @@ export default new Vuex.Store({
       {is_do: false, title: 'タスク3'}
     ]
   },
+  // データの加工や非同期処理を行い、その結果をミューテーションへコミットする
   actions: {
     [types.ADD_TASK] ({ commit }, title) {
       let newItem = {
@@ -29,6 +33,7 @@ export default new Vuex.Store({
     }
   },
   mutations: {
+    // 引数として取れるのはstateとpayloadの2つ、payloadはコミットからの引数
     [types.ADD_TASK] (state, payload) {
       state.items.push(payload.data);
     },
