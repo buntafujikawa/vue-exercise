@@ -24,6 +24,11 @@
         </a>
       </li>
       <li>
+        <a href="/#/chapter5" target="_blank">
+          Chapter5
+        </a>
+      </li>
+      <li>
         <a href="/#/chapter6" target="_blank">
           Chapter6
         </a>
